@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Democracy & Voting Eligibility Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff9933;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #000080;
+            border-bottom: 3px solid #128807;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .history-section p {
+            line-height: 1.6;
+            font-size: 15px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .history-card {
+            background-color: #fdfdfd;
+            border-left: 5px solid #ff9933;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+        }
+
+        .resource-links {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px dashed #000080;
+        }
+
+        .resource-links a {
+            color: #000080;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+
+        .resource-links a:hover {
+            color: #ff9933;
+            text-decoration: underline;
+            background-color: #fff3e6;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .form-section {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 25px;
+            border: 1px solid #b3d7ff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border: 2px solid #000080;
+            background-color: white;
+            box-shadow: 0px 0px 8px rgba(0,0,128,0.4);
+        }
+
+        button {
+            background-color: #000080;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #000066;
+        }
+
+        .table-section {
+            margin-top: 30px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 2px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #128807;
+            color: white;
+        }
+
+        .eligible {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+
+        .not-eligible {
+            background-color: #f8d7da;
+            color: #721c24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>National Democratic Voting Portal</h1>
+    <p>Exploring India's Democratic Heritage & Voter Statistics</p>
+</header>
+
+<div class="container">
+
+    <!-- History Section -->
+    <div class="history-section">
+
+        <h2>Chronological History of India's Democratic Voting System</h2>
+
+        <div class="history-card">
+            <h3>1. Ancient Roots (The Gana-Sanghas)</h3>
+            <p>
+                Long before modern ballot papers, democracy existed in
+                ancient India around the 6th century BCE. Independent
+                republics known as <strong>Gana-Sanghas</strong>
+                (such as the Vajji confederation and Licchavis) made
+                administrative decisions collectively. Voting was
+                conducted using colored wooden pieces called
+                <strong>Salakas</strong>.
+            </p>
+        </div>
+
+        <div class="history-card">
+            <h3>2. 1950: Universal Adult Suffrage</h3>
+            <p>
+                When India adopted its Constitution on January 26, 1950,
+                it took a historic step. India implemented
+                <strong>Universal Adult Suffrage (Article 326)</strong>.
+                Every adult citizen, regardless of gender, religion,
+                caste or wealth, received equal voting rights.
+            </p>
+        </div>
+
+        <div class="history-card">
+            <h3>3. The 61st Amendment Act, 1988</h3>
+            <p>
+                Originally, the legal minimum voting age was 21 years.
+                Parliament passed the
+                <strong>61st Constitutional Amendment Act in 1988</strong>,
+                lowering the voting age to <strong>18 years</strong>.
+            </p>
+        </div>
+
+        <div class="resource-links">
+            <strong>External References:</strong><br><br>
+
+            <a href="https://eci.gov.in" target="_blank">
+                ↗ Election Commission of India
+            </a>
+
+            <a href="https://voters.eci.gov.in/" target="_blank">
+                ↗ Voters' Service Portal
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Eligibility Form -->
+    <div class="form-section">
+
+        <h2>Interactive Voting Eligibility System</h2>
+
+        <form id="eligibilityForm">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name"
+                       required placeholder="Type full name here">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age (in years):</label>
+                <input type="number" id="age"
+                       required placeholder="Type age here"
+                       min="1" max="120" step="1">
+            </div>
+
+            <div class="form-group">
+                <label for="citizen">
+                    Are you a recognized Citizen of India?
+                </label>
+
+                <select id="citizen" required>
+                    <option value="">-- Choose Option --</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Check Eligibility & Log Record
+            </button>
+
+        </form>
+    </div>
+
+    <!-- Records Table -->
+    <div class="table-section">
+
+        <h2>Live System Records Log</h2>
+
+        <table id="recordsTable">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Indian Citizen</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+
+                <tr class="eligible">
+                    <td>Rahul Sharma</td>
+                    <td>24</td>
+                    <td>Yes</td>
+                    <td>Eligible to Vote</td>
+                </tr>
+
+                <tr class="not-eligible">
+                    <td>Priya Patel</td>
+                    <td>16</td>
+                    <td>Yes</td>
+                    <td>Not Eligible (Underage)</td>
+                </tr>
+
+                <tr class="not-eligible">
+                    <td>John Smith</td>
+                    <td>35</td>
+                    <td>No</td>
+                    <td>Not Eligible (Non-Citizen)</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<script>
+
+    // Form submission event
+    document.getElementById("eligibilityForm")
+        .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        // Get input values
+        var name = document.getElementById("name").value.trim();
+        var ageValue = document.getElementById("age").value;
+        var citizen = document.getElementById("citizen").value;
+
+        // Validate input
+        if (name === "" || ageValue === "" || citizen === "") {
+            alert("Please fill all fields!");
+            return;
+        }
+
+        var age = Number(ageValue);
+
+        if (!Number.isInteger(age) || age < 1 || age > 120) {
+            alert("Please enter a valid age between 1 and 120.");
+            return;
+        }
+
+        // Check voting eligibility
+        var statusText = "";
+        var rowClass = "";
+
+        if (citizen === "Yes" && age >= 18) {
+
+            statusText = "Eligible to Vote";
+            rowClass = "eligible";
+
+        } else if (citizen === "No") {
+
+            statusText = "Not Eligible (Non-Citizen)";
+            rowClass = "not-eligible";
+
+        } else {
+
+            statusText = "Not Eligible (Underage)";
+            rowClass = "not-eligible";
+
+        }
+
+        // Create new table row
+        var newRow = document.createElement("tr");
+
+        newRow.className = rowClass;
+
+        // Create individual cells safely
+        var values = [name, age, citizen, statusText];
+
+        values.forEach(function(value) {
+            var cell = document.createElement("td");
+            cell.textContent = value;
+            newRow.appendChild(cell);
+        });
+
+        // Add new record to live system records log
+        document.getElementById("tableBody").appendChild(newRow);
+
+        // Display success message
+        alert("Record successfully added to Live System Records Log!");
+
+        // Reset form
+        document.getElementById("eligibilityForm").reset();
+
+    });
+
+</script>
+
+</body>
+</html>
